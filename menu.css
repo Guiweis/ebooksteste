@@ -1,0 +1,35 @@
+@font-face {
+  font-family: minhaFonte;
+  src: src: url('AGENCYR.TTF') format('truetype');
+}
+
+.hover-underline {
+  font-size: 18px;
+  color: #ffffff;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.hover-underline::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to right, #006437);
+  bottom: -5px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease-out;
+}
+
+.hover-underline::before {
+  top: -5px;
+  transform-origin: left;
+}
+
+.hover-underline:hover::after,
+.hover-underline:hover::before {
+  transform: scaleX(1);
+}
