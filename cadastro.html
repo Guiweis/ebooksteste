@@ -1,0 +1,168 @@
+<html>
+
+<head>
+    <title>GW EBOOKS - CADASTRO DE USUÁRIO</title>
+    <link href="css/menu.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        body {
+            background: #000;
+            font-size: 20px;
+            color: white;
+        }
+
+        @font-face {
+            font-family: "minhaFonte";
+            src: url('fonts/AGENCYR.TTF') format('truetype');
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        form {
+            width: 300px;
+            margin: 200px auto;
+            text-align: center;
+        }
+
+        input {
+            display: block;
+            margin: 10px auto;
+            width: 250px;
+            height: 30px;
+        }
+
+        .box {
+            font-family: "minhaFonte";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: linear-gradient(90deg, rgba(0, 100, 55, 1) 0%, rgba(10, 158, 92, 1) 50%, rgba(0, 100, 55, 1) 100%);
+            padding: 15px;
+            border-radius: 15px;
+            width: 40%;
+        }
+
+        fieldset {
+            font-family: "minhaFonte";
+            border: 3px solid #fff
+        }
+
+        legend {
+            font-family: "minhaFonte";
+            border: 1px;
+            solid: #fff;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            font-size: 30px;
+
+        }
+
+        .inputBox {
+            font-family: "minhaFonte";
+            position: relative;
+        }
+
+        .inputUser {
+            background: none;
+            border: none;
+            border-bottom: 1px solid white;
+            color: white;
+            outline: none;
+            font-family: "minhaFonte";
+            font-size: 20px;
+            width: 100%;
+            text-decoration: none;
+        }
+
+        .labelInput {
+            font-family: "minhaFonte";
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            pointer-events: none;
+            transition: .5s;
+        }
+
+        .inputUser:focus~.labelInput,
+        .inputUser:valid~.labelInput {
+            font-family: "minhaFonte";
+            top: -20px;
+            font-size: 20px;
+            color: rgb(34, 255, 0);
+        }
+
+        .entrar {
+            font-family: "minhaFonte";
+            font-size: 25px;
+            background: rgb(255, 255, 255);
+            color: #006437;
+            width: 150px;
+            height: 35px;
+            padding: 0;
+            border: none;
+            border-radius: 15px;
+            font-weight: bold;
+            margin: 0 auto;
+            display: block;
+            text-decoration: none;
+        }
+
+        .entrar:hover {
+            font-family: "minhaFonte";
+            font-size: 25px;
+            background: rgb(2, 38, 22);
+            color: rgb(34, 255, 0);
+            width: 150px;
+            height: 35px;
+            padding: 1px;
+            border: none;
+            border-radius: 15px;
+            font-weight: bold;
+            margin: 0 auto;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <br>
+    <table width="200" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+            <td><a href="../../index.html"><br><br><img src="imagem/gwebook_logomarca_site.png" width="200"
+                        height="35"></a></td>
+        </tr>
+    </table>
+
+    <form method="POST" action="cadastro.php">
+            <div class="box">
+                <fieldset>
+                    <legend><strong>Cadastro</strong></legend>
+                    <br>
+                    <div class="inputBox">
+                        <input type="text" id="login" name="login" class="inputUser" required>
+                        <label for="login" class="labelInput">Email</label>
+                    </div>
+                    <br>
+                    <div class="inputBox">
+                        <input type="password" id="senha" class="inputUser" required>
+                        <label for="senha" class="labelInput">Senha</label>
+                    </div>
+                    <br>
+                    <input type="submit" width="166" align="center" vertical-align="center" value="Cadastrar"
+                        id="cadastrar" name="cadastrar" class="entrar">
+                        <br>
+                </fieldset>
+            </div>
+    </form>
+</body>
+
+</html>
