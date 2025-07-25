@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GW EBOOKS - HOME</title>
+    <link href="menu.css" rel="stylesheet" type="text/css">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        body {
+            background-color: #000;
+            margin-left: 0px;
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+        }
+
+        @font-face {
+            font-family: "minhaFonte";
+            src: url('AGENCYR.TTF') format('truetype');
+        }
+
+        .inputBox {
+            font-family: "minhaFonte";
+            position: relative;
+        }
+
+        .inputUser {
+            background: none;
+            border: none;
+            border-bottom: 1px solid white;
+            color: white;
+            outline: none;
+            font-family: "minhaFonte";
+            font-size: 20px;
+            width: 100%;
+            text-decoration: none;
+        }
+
+        .labelInput {
+            font-family: "minhaFonte";
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            pointer-events: none;
+            transition: .5s;
+        }
+
+        .inputUser:focus~.labelInput,
+        .inputUser:valid~.labelInput {
+            font-family: "minhaFonte";
+            top: -20px;
+            font-size: 20px;
+            color: rgb(34, 255, 0);
+        }
+        
+    </style>
+</head>
+<table border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+        <td bgcolor="#FFFFFF">
+            <table width="1024" border="0" align="center" cellpadding="10" cellspacing="0">
+                <tr>
+                    <td align="left" valign="top" bgcolor="#000000" class="text2">
+                        <table width="1024" border="0" align="center" cellpadding="5" cellspacing="0">
+                            <tr>
+                                <td width="512" align="left" valign="middle"><a href="index.html"><img
+                                            src="imagem/gwebook_logomarca_site.png" width="200" height="35"></a></td>
+                                <td width="512" align="right" valign="middle">
+                                    <table width="217" border="0" align="left" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td width="57" align="center" class="text1branco"><a
+                                                    href="livros_ebooks.html"
+                                                    class="hover-underline">Livros/Ebooks</a></td>
+                                            <td width="57" align="center" class="text1branco"><a href="autor.html"
+                                                    class="hover-underline">Autor</a></td>
+                                            <td width="57" align="center" class="text1branco"><a href="contato.html"
+                                                    class="hover-underline">Contato</a></td>
+                                        </tr>
+                                    </table>
+                                    <table width="200" border="0" align="right" cellpadding="0" cellspacing="0">
+                                        <tr>
+                              <td width="128" align="right"><a
+                                                    href="cadastro.html"
+                                                    class="hover-underline">CADASTRE-SE</a></td>
+                              <td width="62" align="right"><a
+                                                    href="login.html"
+                                                    class="hover-underline">LOGIN</a></td>
+                            </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                </tr>
+                <tr>
+                    <td align="center" valign="top" bgcolor="#FFFFFF">
+                        <table width="1024" border="0" align="center" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td align="left" valign="top" class="text1">
+                                    <p><span class="text1nome_verde_titulo">CONTATO</span></p>
+                                    <table width="996" border="0" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td width="996" class="text1nomepreto2">
+                                                <form class="contact-form"
+                                                    action="contato.php" method="POST">
+                                                    <label for="nome" class="inputBox">Nome</label><br><br>
+                                                    <input type="text" name="nome" required>
+                                                    <label for="email" class="inputBox">Email</label>
+                                                    <label for="email"></label><br><br>
+                                                    <input type="email" name="email" required>
+                                                    <label for="message" class="inputBox">Mensagem</label><br><br>
+                                                    <textarea name="mensagem" rows="5" cols="100" class="inputBox" required></textarea>
+                                                    <button type="submit">Enviar</button>
+                                                    
+                                                </form>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left" valign="middle" bgcolor="#000000" class="text2" id="text2">
+                        <table width="1024" border="0" align="center" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td width="665" height="84" align="left" valign="top" class="text1negrito"><strong>
+                                        Guilherme Weisberg</strong><br> E-mail - <a href="maito: guiweisebooks@gmail.com" class="text1negrito">guiweisebooks@gmail.com</a></td>
+                                <td width="359" align="left" valign="top" class="text1branco"><span
+                                        class="text1negrito"><strong> Siga-nos nas Rede Sociais</strong></span>
+                                    <p>
+                                        <a href="https://www.instagram.com/guiweisebooks/"><img
+                                                src="imagem/instagram_logo_50_50px.png" alt="" width="50"
+                                                height="50"></a>
+                                        <a
+                                            href="https://www.facebook.com/people/Gui-Weisebooks/pfbid05LvSipF67E6s3fMGCb9y4dUspaZofW2fZBAzgSW8VL7qBVCE43WBBsqzwv35BRuWl/"><img
+                                                src="imagem/facebook_logo_50_50px.png" alt="" width="50"
+                                                height="50"></a>
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" bgcolor="#000000" class="text2" id="text"><span class="textcriado">Site criado
+                            por  Guilherme Weisberg</span><br>
+                        Copyright © 2025 Todos os Direitos Reservados
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<div id="popup">
+    <div class="popup-content">
+        <table width="200" border="0" align="right" cellpadding="0">
+            <tr>
+                <td align="center"><a href="https://api.whatsapp.com/send?phone=5511981664782"
+                        class="text1negrito">Algumas dúvidas?</a></td>
+            </tr>
+            <tr>
+                <td align="center"><a href="https://api.whatsapp.com/send?phone=5511981664782"><img
+                            src="imagem/whatsapp_logo.png" alt="Logo" width="48" height="48" class="logo"></a></td>
+            </tr>
+        </table>
+        <p><span class="text1negrito"><a href="https://api.whatsapp.com/send?phone=5511981664782"
+                    class="text1negrito"></a></span></p>
+    </div>
+</div>
+</body>
+
+</html>
