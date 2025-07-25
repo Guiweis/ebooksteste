@@ -1,0 +1,12 @@
+name: Meu Deploy
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: echo "Olá mundo do GitHub Actions"
